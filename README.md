@@ -41,7 +41,9 @@ ThreadPoolExecutor类实现了ExecutorService接口和Executor接口，可以设
 
 ## 5,stringbuffer和stringbuild区别
 StringBuffer 中大部分都是synchronized，同步方法，因此是线程安全的。
+
 StringBuild 则没有，所以它不是线程安全的。
+
 在单线程情况下，StringBuild效率更高，因为不是同步方法。
 
 ## 6,StringBuild线程不安全体现在哪
@@ -54,6 +56,7 @@ StringBuild 则没有，所以它不是线程安全的。
 这是因为JVM运行时数据区包括了程序计数器，本地方法栈，jvm栈，堆。在这四个区中，前三个都是线程间隔离的。
 只有堆内存是线程间共享的。而全局变量放在堆内存中，各线程内jvm栈只保存了对象引用，所以各线程更改的还是一个
 内存地址的数据。
+
 在JDK1.8中元数据区取代了永久代，元数据区并不在虚拟机中，而在本地内存中。静态变量是保存在元数据区中的。所以对于
 线程来说，操作的还是同一内存地址上的数据。
 
@@ -92,6 +95,7 @@ volatile变量也可以保证该变量对所有线程可见，但不能保证原
 ## 8,arraylist和linkedlist区别
 数据结构：ArrayList是顺序存储的数据结构，底层是数组，它的存储地址是连续的。
 	  LinkedList是链表结构的线程表，地址不是连续的，它是双向链表，节点保存着对上下节点的引用。
+
 效率：ArrayList随机查询的时间复杂度是O(1),LinkedList随机查询需要移动指针查询,复杂度为O(n)
 直接添加复杂度都为O(1),但是ArrayList有可能触发扩容，需要将数组复制到新的数组。
 指定位置添加ArrayList需要将添加索引后面的移动且有可能触发扩容,而LinkedList需要先查找添加位置的节点,

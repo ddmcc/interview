@@ -1,7 +1,7 @@
 # Interview
 
 ## 1,线程池四种拒绝策略
-[](https://ddmcc.space/2019/07/05/thread-policy/)
+[线程池拒绝策略](https://ddmcc.space/2019/07/05/thread-policy/)
 
 ## 2,jvm调优
 

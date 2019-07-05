@@ -1,16 +1,7 @@
 # Interview
 
 ## 1,线程池四种拒绝策略
-当任务源源不断的过来，而我们的系统又处理不过来的时候，我们要采取的策略是拒绝服务。
-ThreadPoolExecutor类实现了ExecutorService接口和Executor接口，可以设置线程池corePoolSize，最大线程池大小，AliveTime，拒绝策略等
-- CallerRunsPolicy：它直接在 execute 方法的调用线程中运行被拒绝的任务
-这个策略显然不想放弃执行任务。但是由于池中已经没有任何资源了，那么就直接使用调用该execute的线程本身来执行。
-- AbortPolicy：处理程序遭到拒绝将抛出运行时 RejectedExecutionException 
-这种策略直接抛出异常，丢弃任务。（jdk默认策略，队列满并线程满时直接拒绝添加新任务，并抛出异常）
-- DiscardPolicy：不能执行的任务将被删除 
-这种策略和AbortPolicy几乎一样，也是丢弃任务，只不过他不抛出异常。
-- DiscardOldestPolicy：如果执行程序尚未关闭，则位于工作队列头部（最旧）的任务将被删除，然后重试执行程序（如果再次失败，则重复此过程） 
-在pool没有关闭的前提下首先丢掉缓存在队列中的最早的任务，然后重新尝试运行该任务。
+[](https://ddmcc.space/2019/07/05/thread-policy/)
 
 ## 2,jvm调优
 

@@ -599,3 +599,12 @@ Arraylist扩容是复制数组。
 - DispatcherServlet根据View进行渲染视图（即将模型数据填充至视图中）。
 - DispatcherServlet响应用户。
 
+## 92,Struts2
+![](http://ww1.sinaimg.cn/large/0060GLrDgy1g4w7tnnf8sj308t0agjsi.jpg)
+
+- 浏览器发送请求，经过一系列的过滤器后，到达核心过滤器(StrutsPrepareAndExecuteFilter).
+- StrutsPrepareAndExecuteFilter通过ActionMapper判断当前的请求是否需要某个Action处理,如果不需要，则走原来的流程。如果需要则把请求交给ActionProxy来处理
+- ActionProxy通过Configuration Manager询问框架的配置文件(Struts.xml)，找到需要调用的Action类；
+- 创建一个ActionInvocation实例，来调用Action的对应方法来获取结果集的name,在调用前后会执行相关拦截器。
+- 通过结果集的Name知道对应的结果集来对浏览器进行响应。
+

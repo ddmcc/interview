@@ -608,3 +608,26 @@ Arraylist扩容是复制数组。
 - 创建一个ActionInvocation实例，来调用Action的对应方法来获取结果集的name,在调用前后会执行相关拦截器。
 - 通过结果集的Name知道对应的结果集来对浏览器进行响应。
 
+## 93,Mybatis与Hibernate有什么不同?
+#### 相同点
+- 都是java中orm框架、屏蔽jdbc api的底层访问细节，使用我们不用与jdbc api打交道，就可以完成对数据库的持久化操作。jdbc api编程流程固定，还将sql语句与java代码混杂在了一起，经常需要拼凑sql语句，细节很繁琐。
+- ibatis的好处：屏蔽jdbc api的底层访问细节；将sql语句与java代码进行分离;提供了将结果集自动封装称为实体对象和对象的集合的功能.queryForList返回对象集合，用queryForObject返回单个对象；提供了自动将实体对象的属性传递给sql语句的参数。
+- Hibername的好处：Hibernate是一个全自动的orm映射工具，它可以自动生成sql语句，并执行并返回java结果。
+
+#### 不同点
+- hibernate要比ibatis功能强大很多。因为hibernate自动生成sql语句。
+- ibatis需要我们自己在xml配置文件中写sql语句，hibernate我们无法直接控制该语句，我们就无法去写特定的高效率的sql。对于一些不太复杂的sql查询，hibernate可以很好帮我们完成，但是，对于特别复杂的查询，hibernate就很难适应了，这时候用ibatis就是不错的选择，因为ibatis还是由我们自己写sql语句。
+  ibatis可以出来复杂语句，而hibernate不能。
+- ibatis要比hibernate简单的多。ibatis是面向sql的，不同考虑对象间一些复杂的映射关系。
+
+## 94,介绍一下Hibernate的缓存?
+Hibernate中的缓存分一级缓存和二级缓存。
+   一级缓存就是Session级别的缓存，在事务范围内有效是,内置的不能被卸载。二级缓存是SesionFactory级别的缓存，从应用启动到应用结束有效。是可选的，默认没有二级缓存，需要手动开启。
+    保存数据库后，在内存中保存一份，如果更新了数据库就要同步更新。
+ 什么样的数据适合存放到第二级缓存中？ 　　
+1) 很少被修改的数据 　帖子的最后回复时间　
+2) 经常被查询的数据   电商的地点
+3) 不是很重要的数据，允许出现偶尔并发的数据 　　
+4) 不会被并发访问的数据 　　
+5) 常量数据 
+扩展：hibernate的二级缓存默认是不支持分布式缓存的。使用memcahe,redis等中央缓存来代替二级缓存。　　

@@ -165,7 +165,7 @@ Map的四种遍历方式
 
 2，联合索引abc只用了a字段，索引会生效
 
-## 19,什么情况下要用到多线程，为什么要用，好处
+## 19,什么情况下要用到线程池，为什么要用，好处
 在实际使用中，每个请求创建新线程的服务器在创建和销毁线程上花费的时间和消耗的系统资源，
 甚至可能要比花在实际处理实际的用户请求的时间和资源要多的多。除了创建和销毁线程的开销之外，
 活动的线程也需要消耗系统资源。如果在一个JVM中创建太多的线程，可能会导致系统由于过度消耗内存或者“切换过度”而导致系统资源不足。
@@ -307,6 +307,7 @@ JVM上。到处运行前提是有JVM。
 能够避免在加锁的瞬间，有其他依赖注入引发bean实例的创建，从而造成重复创建的结果。创建后把bean存到缓存表中。
 
 ## 38,redis有支持哪些数据结构
+String（字符串）、List（列表）、Set（集合）、Hash（哈希）、Zset（有序集合）
 
 ## 39,servlet怎么取前端参数
 request.getParamter
@@ -585,3 +586,16 @@ Arraylist扩容是复制数组。
 - 当对表中的数据进行增加、删除和修改的时候，索引也要动态的维护，这样就降低了数据的维护速度
 
 ## 90,多态的体现？
+
+## 91,SpringMVC
+![](http://ww1.sinaimg.cn/large/0060GLrDgy1g4w7ijvkfnj30x70ibadz.jpg)
+
+- 用户发送请求至前端控制器DispatcherServlet, DispatcherServlet收到请求解析url,根据URI调用HandlerMapping处理器映射器,处理器映射器根据xml配置,注解找到具体的处理器,生成处理器对象(Handler)及处理器拦截器(如果有则生成)一并返回给DispatcherServlet,DispatcherServlet调用HandlerAdapter处理器适配器。
+- HandlerAdapter经过适配调用具体的处理器(Controller，也叫后端控制器)。
+- Controller执行完成返回ModelAndView。
+- HandlerAdapter将controller执行结果ModelAndView返回给DispatcherServlet。
+- DispatcherServlet将ModelAndView传给ViewReslover视图解析器。
+- ViewReslover解析后返回具体View。
+- DispatcherServlet根据View进行渲染视图（即将模型数据填充至视图中）。
+- DispatcherServlet响应用户。
+

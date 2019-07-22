@@ -43,7 +43,7 @@ StringBuild 则没有，所以它不是线程安全的。
 
 ## 7,你对线程安不安全怎么理解（关键词:全局变量、JVM运行时数据区、可见性、原子性、锁
 
-[](https://ddmcc.space/2019/06/24/how-to-understand-thread-safety/)
+[如何理解线程安全](https://ddmcc.space/2019/06/24/how-to-understand-thread-safety/)
 
 | 特性    | volatile | synchronized  | Lock     |
 |---------|:-------:|:-------------:|:--------:|

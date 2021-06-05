@@ -6,8 +6,7 @@
   <title>我的学习笔记</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <!--主题-->
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
 </head>
@@ -17,7 +16,10 @@
 
 </nav>
 <div id="app"></div>
+<!-- docsify-edit-on-github -->
+<script src="//unpkg.com/docsify-edit-on-github/index.js"></script>
 <script>
+
   window.$docsify = {
     name: '我的学习笔记',
     repo: '',
@@ -40,7 +42,7 @@
       language: 'chinese'
     },
     plugins: [
-     // EditOnGithubPlugin.create('https://github.com/Snailclimb/JavaGuide/blob/master/')
+     EditOnGithubPlugin.create('https://github.com/ddmcc/interview/blob/master/')
     ],
   }
 </script>
@@ -49,6 +51,7 @@
 <script src="//unpkg.com/prismjs/components/prism-java.js"></script>
 <!--全文搜索,直接用官方提供的无法生效-->
 <script src="https://cdn.bootcss.com/docsify/4.5.9/plugins/search.min.js"></script>
+
 <!-- 复制到剪贴板 -->
 <script src="//unpkg.com/docsify-copy-code"></script>
 <!-- 图片缩放 -->

@@ -32,12 +32,15 @@
     - [新生代gc工作流程](?id=新生代gc工作流程)
     - [如何判断对象是否死亡（两种方法）](?id=如何判断对象是否死亡（两种方法）)
     - [MinorGc和FullGC 有什么不同呢？](?id=MinorGc和FullGC有什么不同呢？)
+    - [什么是空间分配担保机制？](?id=什么是空间分配担保机制？)
   - [Java对象](?id=Java对象)
     - [对象的创建过程](?id=对象的创建过程)
     - [对象内存的分配方式？](?id=对象内存的分配方式？)
     - [对象的内存布局](?id=对象的内存布局)
     - [对象的访问定位](?id=对象的访问定位)
     - [Java中有哪些引用类型?](?id=Java中有哪些引用类型?)
+  - [垃圾回收器](?id=垃圾回收器)
+    
  
 - IO
   
@@ -60,9 +63,13 @@
 
 - 并发编程
 
- - [ThreadLocal内存泄露问题？源码是怎么解决的？为什么要用弱引用？](?id=ThreadLocal内存泄露问题？源码是怎么解决的？为什么要用弱引用？)
- - [ThreadLocal使用场景？](?id=ThreadLocal使用场景？)
- 
+  - [ThreadLocal类](?id=ThreadLocal类)
+      - [说说ThreadLocal类？作用？数据结构？](?id=说说ThreadLocal类？作用？数据结构？)
+      - [ThreadLocalMap哈希算法？怎么解决hash冲突？](?id=ThreadLocalMap哈希算法？怎么解决hash冲突？)
+      - [ThreadLocalMap扩容机制？](?id=ThreadLocalMap扩容机制？)
+      - [ThreadLocal内存泄露问题？源码是怎么解决的？为什么要用弱引用？](?id=ThreadLocal内存泄露问题？源码是怎么解决的？为什么要用弱引用？)
+      - [ThreadLocal使用场景？](?id=ThreadLocal使用场景？)
+      
  
  
 - 框架

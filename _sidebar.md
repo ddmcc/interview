@@ -11,6 +11,19 @@
 
 - 集合容器
   - [集合框架底层数据结构总结](?id=集合框架底层数据结构总结)
+  - [使用什么集合你是怎么选择的？](?id=使用什么集合你是怎么选择的？)
+  - [为什么要使用集合？而不是数组](?id=为什么要使用集合？而不是数组)
+  
+  - [List](?id=List)
+    - [ArrayList和Vector的区别](?id=ArrayList和Vector的区别)
+    - [ArrayList与LinkedList区别](?id=ArrayList与LinkedList区别)
+    - [RandomAccess接口的作用是什么？](?id=RandomAccess接口的作用是什么？)
+    - [说一说ArrayList的扩容机制吧](?id=说一说ArrayList的扩容机制吧)
+    - [说说ensureCapacity方法的作用](?id=说说ensureCapacity方法的作用)
+    - [System.arraycopy()和Arrays.copyOf()方法](?id=System.arraycopy()和Arrays.copyOf()方法)
+
+  - [Set](?id=Set)
+    - [比较HashSet、LinkedHashSet和TreeSet三者的异同](?id=比较HashSet、LinkedHashSet和TreeSet三者的异同)
 
 - [JVM](?id=JVM)
 

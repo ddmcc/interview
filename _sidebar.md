@@ -3,9 +3,11 @@
     - [String对象的两种创建方式](?id=String对象的两种创建方式)
     - [newString这句话创建了几个对象？](?id=newString这句话创建了几个对象？)
   - [为什么说反射速度慢？为什么慢？](?id=为什么说反射速度慢？为什么慢？)
+  - [==与equals的区别](?id=等号与equals的区别)
+  - [hashCode()与equals()的相关规定](?id=hashCode与equals的相关规定)
   
 - 设计模式
-  - [说说设计模式6大原则？](?id=说说设计模式6大原则？)
+  - [说说设计模式6大原则](?id=说说设计模式6大原则)
   - [代理模式和桥接模式的异同点？](?id=代理模式和桥接模式的异同点？)
   - [有几种单例的实现方式？以及它们的优缺点？](?id=有几种单例的实现方式？以及它们的优缺点？)
 
@@ -20,10 +22,18 @@
     - [RandomAccess接口的作用是什么？](?id=RandomAccess接口的作用是什么？)
     - [说一说ArrayList的扩容机制吧](?id=说一说ArrayList的扩容机制吧)
     - [说说ensureCapacity方法的作用](?id=说说ensureCapacity方法的作用)
-    - [System.arraycopy()和Arrays.copyOf()方法](?id=System.arraycopy()和Arrays.copyOf()方法)
+    - [System.arraycopy()和Arrays.copyOf()方法](?id=arraycopy和copyof方法)
 
   - [Set](?id=Set)
     - [比较HashSet、LinkedHashSet和TreeSet三者的异同](?id=比较HashSet、LinkedHashSet和TreeSet三者的异同)
+    - [HashSet是怎么去重的？](?id=HashSet是怎么去重的？)
+
+  - [Map](?id=Map)
+    - [HashMap和Hashtable的区别](?id=HashMap和Hashtable的区别)
+    - [HashMap底层数据结构](?id=HashMap底层数据结构)
+    - [HashMap的长度为什么是2的幂次方？](?id=HashMap的长度为什么是2的幂次方？)
+    - [ConcurrentHashMap底层具体实现](?id=ConcurrentHashMap底层具体实现)
+    - [ConcurrentHashMap和Hashtable的区别](?id=ConcurrentHashMap和Hashtable的区别)
 
 - [JVM](?id=JVM)
 
@@ -37,6 +47,8 @@
     
   - [JVM内存区域](?id=JVM内存区域)
     - [运行时数据区](?id=运行时数据区)
+    - [程序计数器为什么是私有的？](?id=程序计数器为什么是私有的？)
+    - [虚拟机栈和本地方法栈为什么是私有的？](?id=虚拟机栈和本地方法栈为什么是私有的？)
     - [深拷贝与浅拷贝](?id=深拷贝与浅拷贝)
     - [堆和栈的区别？](?id=堆和栈的区别？)
     - [方法是如何调用的？](?id=方法是如何调用的？)
@@ -86,6 +98,13 @@
       - [Http无状态链接，如何实现session跟踪？](?id=Http无状态链接，如何实现session跟踪？)
 
 - 并发编程
+
+  - [什么是线程和进程？](?id=什么是线程和进程？)
+  - [说说线程的生命周期和状态？](?id=说说线程的生命周期和状态？)
+  - [为什么要使用多线程呢？](?id=为什么要使用多线程呢？)
+  - [使用多线程可能带来什么问题？](?id=使用多线程可能带来什么问题？)
+  - [说说并发与并行的区别？](?id=说说并发与并行的区别？)
+
 
   - [ThreadLocal类](?id=ThreadLocal类)
       - [说说ThreadLocal类？作用？数据结构？](?id=说说ThreadLocal类？作用？数据结构？)

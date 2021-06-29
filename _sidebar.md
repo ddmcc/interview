@@ -101,12 +101,31 @@
 
   - [什么是线程和进程？](?id=什么是线程和进程？)
   - [说说线程的生命周期和状态？](?id=说说线程的生命周期和状态？)
+  - [说说sleep()方法和wait()方法区别和共同点？](?id=说说sleep方法和wai方法区别和共同点？)
+  - [为什么我们不能直接调用run()方法？](?id=为什么我们不能直接调用run方法？)
   - [为什么要使用多线程呢？](?id=为什么要使用多线程呢？)
   - [使用多线程可能带来什么问题？](?id=使用多线程可能带来什么问题？)
+  - [什么是线程死锁？如何避免死锁？](?id=什么是线程死锁？如何避免死锁？)
   - [说说并发与并行的区别？](?id=说说并发与并行的区别？)
+  - [什么是上下文切换？](?id=什么是上下文切换？)
+  - [并发编程三大特性](?id=并发编程三大特性)
 
+  - 线程池
+      - [为什么要用线程池？](?id=为什么要用线程池？)
+      - [线程池ThreadPoolExecutor重要参数](?id=线程池ThreadPoolExecutor重要参数)
+      - [线程池被创建后里面有线程吗？](?id=线程池被创建后里面有线程吗？)
+      - [核心线程数会被回收吗？需要什么设置？](?id=核心线程数会被回收吗？需要什么设置？)
 
-  - [ThreadLocal类](?id=ThreadLocal类)
+  - synchronized关键字
+      - [讲一下synchronized关键字的底层原理](?id=讲一下synchronized关键字的底层原理)
+      - [谈谈synchronized和ReentrantLock的区别](?id=谈谈synchronized和ReentrantLock的区别)
+      - [synchronized锁升级过程](?id=synchronized锁升级过程)
+
+  - volatile关键字
+    - [volatile关键字的作用？](?id=volatile关键字的作用？)
+    - [说说synchronized关键字和volatile关键字的区别？](?id=说说synchronized关键字和volatile关键字的区别？)
+
+  - ThreadLocal类
       - [说说ThreadLocal类？作用？数据结构？](?id=说说ThreadLocal类？作用？数据结构？)
       - [ThreadLocalMap哈希算法？怎么解决hash冲突？](?id=ThreadLocalMap哈希算法？怎么解决hash冲突？)
       - [ThreadLocalMap扩容机制？](?id=ThreadLocalMap扩容机制？)

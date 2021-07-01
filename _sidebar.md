@@ -16,7 +16,7 @@
   - [使用什么集合你是怎么选择的？](?id=使用什么集合你是怎么选择的？)
   - [为什么要使用集合？而不是数组](?id=为什么要使用集合？而不是数组)
   
-  - [List](?id=List)
+  - List
     - [ArrayList和Vector的区别](?id=ArrayList和Vector的区别)
     - [ArrayList与LinkedList区别](?id=ArrayList与LinkedList区别)
     - [RandomAccess接口的作用是什么？](?id=RandomAccess接口的作用是什么？)
@@ -24,11 +24,11 @@
     - [说说ensureCapacity方法的作用](?id=说说ensureCapacity方法的作用)
     - [System.arraycopy()和Arrays.copyOf()方法](?id=arraycopy和copyof方法)
 
-  - [Set](?id=Set)
+  - Set
     - [比较HashSet、LinkedHashSet和TreeSet三者的异同](?id=比较HashSet、LinkedHashSet和TreeSet三者的异同)
     - [HashSet是怎么去重的？](?id=HashSet是怎么去重的？)
 
-  - [Map](?id=Map)
+  - Map
     - [HashMap和Hashtable的区别](?id=HashMap和Hashtable的区别)
     - [HashMap底层数据结构](?id=HashMap底层数据结构)
     - [HashMap的长度为什么是2的幂次方？](?id=HashMap的长度为什么是2的幂次方？)
@@ -37,7 +37,7 @@
 
 - [JVM](?id=JVM)
 
-  - [类加载](?id=类加载)
+  - 类加载
     - [类的生命周期](?id=类的生命周期)
     - [类加载过程](?id=类加载过程)
     - [双亲委派加载机制](?id=双亲委派加载机制)
@@ -45,7 +45,7 @@
     - [如果不想用双亲委派模型怎么办？](?id=如果不想用双亲委派模型怎么办？)
     - [双亲委派模型的好处？](?id=双亲委派模型的好处？)
     
-  - [JVM内存区域](?id=JVM内存区域)
+  - JVM内存区域
     - [运行时数据区](?id=运行时数据区)
     - [程序计数器为什么是私有的？](?id=程序计数器为什么是私有的？)
     - [虚拟机栈和本地方法栈为什么是私有的？](?id=虚拟机栈和本地方法栈为什么是私有的？)
@@ -55,9 +55,10 @@
     - [方法区和永久代的关系](?id=方法区和永久代的关系)
     - [为什么要将永久代替换为元空间呢？](?id=为什么要将永久代替换为元空间呢？)
     
-  - [内存分配与垃圾回收](?id=内存分配与垃圾回收)
+  - 内存分配与垃圾回收
     - [对象内存分配机制](?id=对象内存分配机制)
     - [动态计算晋升年龄阈值](?id=动态计算晋升年龄阈值)
+    - [为什么设置新生代的年龄不能超过15？](?id=为什么设置新生代的年龄不能超过15？)
     - [垃圾回收算法](?id=垃圾回收算法)
     - [为什么堆内存要分为新生代、老年代？](?id=为什么堆内存要分为新生代、老年代？)
     - [为什么要有Survivor区？](?id=为什么要有Survivor区？)
@@ -66,7 +67,7 @@
     - [MinorGc和FullGC 有什么不同呢？](?id=MinorGc和FullGC有什么不同呢？)
     - [什么是空间分配担保机制？](?id=什么是空间分配担保机制？)
     
-  - [Java对象](?id=Java对象)
+  - Java对象
     - [对象的创建过程](?id=对象的创建过程)
     - [对象内存的分配方式？](?id=对象内存的分配方式？)
     - [对象的内存布局](?id=对象的内存布局)
@@ -124,11 +125,16 @@
       - [AQS对资源的共享方式](?id=AQS对资源的共享方式)
       - [AQS相关组件介绍](?id=AQS相关组件介绍)
 
-  - CAS
-  
-  - Atomic原子类
+  - CAS和Atomic原子类
+      - [了解CAS吗？](?id=了解CAS吗)
+      - [Atomic原子类有什么用？](?id=Atomic原子类有什么用？)
+      - [能不能简单介绍一下AtomicInteger类的原理](?id=能不能简单介绍一下AtomicInteger类的原理)
+      - [CAS会带来哪些问题？能不能讲讲](?id=CAS会带来哪些问题？能不能讲讲)
   
   - ReentrantLock类
+      - [介绍一下ReentrantLock](?id=介绍一下ReentrantLock)
+      - [ReentrantLock是怎么实现可重入的？](?id=ReentrantLock是怎么实现可重入的？)
+      - [说说公平锁与非公平锁](?id=说说公平锁与非公平锁)
 
   - synchronized关键字
       - [讲一下synchronized关键字的底层原理](?id=讲一下synchronized关键字的底层原理)
@@ -146,7 +152,10 @@
       - [ThreadLocal内存泄露问题？源码是怎么解决的？为什么要用弱引用？](?id=ThreadLocal内存泄露问题？源码是怎么解决的？为什么要用弱引用？)
       - [ThreadLocal使用场景？](?id=ThreadLocal使用场景？)
       
- 
+  - 并发容器
+      - [ConcurrentHashMap](?id=ConcurrentHashMap)
+      - [CopyOnWriteArrayList](?id=CopyOnWriteArrayList)
+      - [ConcurrentLinkedQueue](?id=ConcurrentLinkedQueue)
  
 - 框架
   

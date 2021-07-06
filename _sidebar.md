@@ -75,7 +75,7 @@
     - [Java中有哪些引用类型？](?id=Java中有哪些引用类型？)
     
   - [垃圾回收器](?id=垃圾回收器)
-    
+  
 - IO
   
 - 网络
@@ -156,18 +156,24 @@
       - [ConcurrentHashMap](?id=ConcurrentHashMap)
       - [CopyOnWriteArrayList](?id=CopyOnWriteArrayList)
       - [ConcurrentLinkedQueue](?id=ConcurrentLinkedQueue)
- 
+
 - 框架
   
 - 数据库
   - [InnoDB存储引擎各组件介绍](?id=innoDB存储引擎各组件介绍)
   - [一条sql语句是如何执行的？](?id=一条sql语句是如何执行的？)
   - [MyISAM和InnoDB的区别](?id=MyISAM和InnoDB的区别)
+  - [自增值保存在哪里？用完了怎么办？](?id=自增值保存在哪里？用完了怎么办？)
 
   - 索引
       - [索引有什么用？有什么缺点？](?id=索引有什么用？有什么缺点？)
       - [索引的底层数据结构](?id=索引的底层数据结构)
-      
+      - [B树和B+树两者有何异同呢？](?id=B树和B+树两者有何异同呢？)
+      - [为什么用b➕tree来做索引？](?id=为什么用b➕tree来做索引？)
+      - [为什么索引列越小越好？](?id=为什么索引列越小越好？)
+      - [为什么建议主键越小越好？](?id=为什么建议主键越小越好？)
+      - [说说页合并和页分裂？](?id=说说页合并和页分裂？)
+      - [为什么通常建议自增列作为主键？](?id=为什么通常建议自增列作为主键？)
       
   - 事务
   

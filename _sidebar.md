@@ -196,7 +196,8 @@
       - [事务的四种隔离级别](?id=事务的四种隔离级别)
       - [InnoDB如何实现事务的ACID的？](?id=InnoDB如何实现事务的ACID的？)
       - [MVCC在InnoDB中的实现](?id=MVCC在InnoDB中的实现)
-      - [在RC和RR隔离级别下MVCC的差异？](?id=在RC和RR隔离级别下MVCC的差异)
+      - [在RC和RR隔离级别下MVCC的差异？](?id=在RC和RR隔离级别下MVCC的差异？)
+      - [RR级别下会发生幻读吗？为什么？](?id=RR级别下会发生幻读吗？为什么？)
   
 - redis
 

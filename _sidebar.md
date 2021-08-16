@@ -142,6 +142,8 @@
       - [synchronized锁升级过程](?id=synchronized锁升级过程)
 
   - volatile关键字
+    - [讲一下JMM](?id=讲一下JMM)
+    - [happens-before是什么？](?id=happens-before是什么？)
     - [volatile关键字的作用？](?id=volatile关键字的作用？)
     - [说说synchronized关键字和volatile关键字的区别？](?id=说说synchronized关键字和volatile关键字的区别？)
 
@@ -183,7 +185,6 @@
       - [建立索引的一些原则](?id=建立索引的一些原则)
       - [使用索引的注意事项](?id=使用索引的注意事项)
       
-      
   - 锁
       - [InnoDB引擎的行锁是怎么实现的？](?id=MySQL中InnoDB引擎的行锁是怎么实现的？)
       - [InnoDB存储引擎的锁的算法](?id=InnoDB存储引擎的锁的算法)
@@ -216,3 +217,9 @@
 - RPC
 
 - 分布式
+
+
+- Docker
+
+  - [docker常见命令](?id=docker常见命令)
+  - [docker-compose怎么挂载磁盘](?id=docker-compose怎么挂载磁盘)

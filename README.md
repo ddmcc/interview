@@ -69,16 +69,35 @@ false
 true
 ```
 
-#### 为什么说反射速度慢？为什么慢？
+#### String、StringBuffer、StringBuilder的区别
 
-1. 反射会进行一系列的安全性校验，并且一些方法需要通过调用 native 方法来实现
+- **可变性**
 
-2. 如果类没被加载，还得先加载类，并经过连接等阶段，而 new 则无需查找，因为在 Linking 阶段已经将符号引用转为直接引用
+`String` 类中使用 `final` 关键字修饰字符数组来保存字符串 `private final char value[]` ，所以 `String` 对象是不可变的
 
-3. 反射调用方法时会从方法数组中遍历查找，并且会检查可见性等操作会耗时。
+>在 Java 9 之后，String 、StringBuilder 与 StringBuffer 的实现改用 `byte` 数组存储字符串 private final byte[] value
 
-4. 反射在达到一定次数时，会动态编写字节码并加载到内存中，这个字节码没有经过编译器优化，也不能享受JIT优化。
+而 `StringBuilder` 与 `StringBuffer` 都继承自 `AbstractStringBuilder` 类，在 `AbstractStringBuilder` 中也是使用字符数组保存字符串 `char[]value` ，
+但是没有用 `final` 关键字修饰，所以这两种对象都是可变的
 
+- **线程安全性**
+
+`String` 中的对象是不可变的，也就可以理解为常量，线程安全
+
+`StringBuffer` 对方法加了同步锁或者对调用的方法加了同步锁，所以是线程安全的
+
+`StringBuilder` 并没有对方法进行加同步锁，所以是非线程安全的
+
+- **性能**
+
+每次对 `String` 类型进行改变的时候，都会生成一个新的 `String` 对象，然后将指针指向新的 `String` 对象
+
+`StringBuffer` 每次都会对 `StringBuffer` 对象本身进行操作，而不是生成新的对象并改变对象引用。相同情况下使用 `StringBuilder` 相比使用 `StringBuffer` 仅能获得 10%~15% 左右的性能提升，但却要冒多线程不安全的风险
+
+
+#### 为什么Java9后使用byte字节数组而舍弃了char字符数组
+
+- todo
 
 #### 等号与equals的区别
 
@@ -98,6 +117,25 @@ true
 
 综上，`equals()` 方法被覆盖过，则 `hashCode()` 方法也必须被覆盖，
 **hashCode()的默认行为是对堆上的对象产生独特值。如果没有重写 `hashCode()`，则该 `class` 的两个对象无论如何都不会相等（即使这两个对象指向相同的数据）**
+
+
+### 反射
+
+#### 为什么说反射速度慢？为什么慢？
+
+1. 反射会进行一系列的安全性校验，并且一些方法需要通过调用 native 方法来实现
+
+2. 如果类没被加载，还得先加载类，并经过连接等阶段，而 new 则无需查找，因为在 Linking 阶段已经将符号引用转为直接引用
+
+3. 反射调用方法时会从方法数组中遍历查找，并且会检查可见性等操作会耗时。
+
+4. 反射在达到一定次数时（15），会动态编写字节码并加载到内存中，这个字节码没有经过编译器优化，也不能享受JIT优化。
+
+
+### 注解
+
+
+
 
 
 ## 设计模式
@@ -250,6 +288,13 @@ true
 - 避免线程安全问题。枚举类所有属性都会被声明称static类型，它是在类加载的时候初始化的，而类的加载和初始化过程都是线程安全的
 
 - 避免序列化问题， 任何一个readObject方法，不管是显式的还是默认的，它都会返回一个新建的实例，这个新建的实例不同于该类初始化时创建的实例。枚举序列化的时候仅仅是将枚举对象的name属性输出到结果中，反序列化的时候则是通过java.lang.Enum的valueOf方法来根据名字查找枚举对象
+
+
+
+#### 有几种动态代理的方式及它们实现的原理
+
+动态代理主要有 **JDK 动态代理、CGLIB 动态代理**，- todo
+
 
 
 ## 集合容器
@@ -1155,6 +1200,65 @@ G1 收集器在后台维护了一个优先列表，每次根据允许的收集�
 但每个线程有自己的程序计数器、虚拟机栈和本地方法栈，所以系统在产生一个线程，或是在各个线程之间作切换工作时，负担要比进程小得多，也正因为如此，线程也被称为轻量级进程
 
 
+#### 线程有几种创建方式？
+
+创建线程有三种方式： **继承Thread** 、 **实现Runnable接口** 、 **实现Callable接口结合Future**
+
+
+- **继承Thread，重写 run 方法**
+
+```java
+class MyThread extends Thread {
+    
+    @Override
+    public void run() {
+  
+    }
+    
+}
+```
+
+- **实现Runnable接口，重写 run 方法**
+
+```java
+class MyRunable implements Runnable {
+    
+    @Override
+    public void run() {
+        
+    }
+}
+```
+
+
+- 实现Callable接口结合FutureTask
+
+
+创建一个实现了 Callable<T> 接口的类，并实现 `call` 方法
+
+```java
+class MyFutureTask implements Callable<String> {
+    
+    @Override
+    public String call() throws Exception {
+   
+    }
+}
+```
+
+通过 `Callable` 实例创建 `FutureTask` ，然后通过 `FutureTask` 实例创建并启动线程
+
+
+```java
+public static void main(String[]args) {
+    // 创建异步任务
+    FutureTask<String> futureTask = new FutureTask<>(new MyFutureTask());
+    // 启动线程
+    new Thread(futureTask).start();
+    String result = futureTask.get();
+```
+
+
 #### 说说线程的生命周期和状态？
 
 线程创建之后处于 **NEW 新建状态** ，调用 `start()` 方法后开始运行，线程这时候处于 **READY 就绪状态**。就绪状态的线程获得了 `CPU` 时间片（timeslice）后就处于 **RUNNING 运行状态**。
@@ -1285,6 +1389,11 @@ new 一个 Thread，线程进入了新建状态。调用 `start()` 方法，会�
 - `threadFactory` : `executor` 创建新线程的时候会用到
 
 - `handler`: 拒绝策略
+
+
+#### 线程池threadFactory用来做什么？
+
+线程创建的工厂，新的线程都是由 `ThreadFactory` 创建的，自定义 `ThreadFactory` 线程创建工厂可以自定义线程的创建，如修改线程组、名、优先级等
 
 
 #### jdk都有哪些线程池？你是怎么选择的？
@@ -1764,6 +1873,55 @@ Queue` : 当新任务来的时候会先判断当前运行的线程数量是否�
 ### Spring Boot
 
 ### Spring
+
+#### Spring事务有几种使用方式？
+
+- **编程式事务管理**
+
+通过 `TransactionTemplate` 或者 `TransactionManager` 手动管理事务，`TransactionTemplate` 是Spring提供对 `TransactionManager`的封装模板类，所以通常直接使用 `TransactionTemplate`
+
+
+```java
+
+@Autowired
+private TransactionTemplate transactionTemplate;
+
+public void testTransaction() {
+
+        transactionTemplate.execute(new TransactionCallbackWithoutResult() {
+            @Override
+            protected void doInTransactionWithoutResult(TransactionStatus transactionStatus) {
+
+                try {
+
+                    // ....  业务代码
+                } catch (Exception e){
+                    //回滚
+                    transactionStatus.setRollbackOnly();
+                }
+
+            }
+        });
+}
+```
+
+
+- **声明式事务管理**
+
+推荐使用这种方式，代码侵入性最小，实际是通过 `AOP` 实现（基于@Transactional 的全注解方式使用最多）
+
+```java
+@Transactional(rollback = Exception.class)
+public void aMethod {
+    //do something
+}
+```
+``
+
+#### 有哪些事务失效的场景？
+
+
+
 
 ### MyBatis
 

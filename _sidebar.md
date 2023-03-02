@@ -168,10 +168,26 @@
 
 - 框架
 
+  - SpringBoot
+    - [什么是SpringBoot自动装配？](?id=什么是SpringBoot自动装配？)
+    - [SpringBoot的是如何实现自动装配的？如何按需加载？](?id=SpringBoot的是如何实现自动装配的？如何按需加载？)
+    
   - Spring
+    - [说一下bean的生命周期？](?id=说一下bean的生命周期？)
+    - [bean的作用域有哪些?](?id=bean的作用域有哪些?)
+    - [单例bean的线程安全问题了解吗？](?id=单例bean的线程安全问题了解吗？)
+    - [@Component和@Bean的区别是什么？](?id=@Component和@Bean的区别是什么？)
     - [Spring事务有几种使用方式？](?id=Spring事务有几种使用方式？)
-    - []
+    - [有哪些事务失效的场景？](?id=有哪些事务失效的场景？)
+    - [@Resource和@Autowired注解有什么区别](?id=@Resource和@Autowired注解有什么区别)
   
+  - SpringMVC
+    - [SpringMVC工作原理了解吗?](?id=SpringMVC工作原理了解吗?)
+
+  - Mybatis
+
+  - SpringCloud
+
 - 数据库
   - [InnoDB存储引擎各组件介绍](?id=innoDB存储引擎各组件介绍)
   - [一条sql语句是如何执行的？](?id=一条sql语句是如何执行的？)

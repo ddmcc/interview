@@ -180,11 +180,15 @@
     - [Spring事务有几种使用方式？](?id=Spring事务有几种使用方式？)
     - [有哪些事务失效的场景？](?id=有哪些事务失效的场景？)
     - [@Resource和@Autowired注解有什么区别](?id=@Resource和@Autowired注解有什么区别)
-  
+    - [Spring框架中用到了哪些设计模式？](?id=Spring框架中用到了哪些设计模式？) 
+
   - SpringMVC
     - [SpringMVC工作原理了解吗?](?id=SpringMVC工作原理了解吗?)
 
   - Mybatis
+    - [#{}和${}的区别是什么？](?id=#{}和${}的区别是什么？)
+    - [mapper接口的工作原理是什么？](?id=mapper接口的工作原理是什么？)
+    
 
   - SpringCloud
 

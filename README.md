@@ -2097,12 +2097,49 @@ public void aMethod {
 4. 如果既没有指定name，又没有指定type，则自动按照byName方式进行装配；如果没有匹配，则回退为一个原始类型进行匹配，如果匹配则自动装配；
 
 
+#### Spring框架中用到了哪些设计模式？
+
+- **工厂模式** ：Spring 使用工厂模式通过 `BeanFactory`、`ApplicationContext` 创建bean对象
+- **单例模式** ：Spring 中的 Bean 默认都是单例的
+- **代理模式** ：Spring AOP 功能的实现
+- **模板方法模式** : Spring 中 `jdbcTemplate`、`hibernateTemplate` 等以 `Template` 结尾的对数据库操作的类，它们就使用到了模板模式
+- **观察者模式** : Spring 事件驱动模型就是观察者模式很经典的一个应用。
+- **适配器模式** : Spring AOP 的增强或通知(Advice)使用到了适配器模式、spring MVC 中也是用到了适配器模式适配Controller
+
+
 ### SpringMVC
 
 #### SpringMVC工作原理了解吗?
 
+![](https://img-blog.csdnimg.cn/img_convert/de6d2b213f112297298f3e223bf08f28.png)
+
+
+- 客户端（浏览器）发送请求，直接请求到 `DispatcherServlet`
+- `DispatcherServlet` 根据请求信息调用 `HandlerMapping`，根据请求路径匹配到对应的 `Handler`
+- 解析到对应的 `Handler`（也就是我们平常说的 Controller 控制器）后，开始由 `HandlerAdapter` 适配器处理
+- `HandlerAdapter` 会根据Handler来调用真正的处理器开处理请求，并处理相应的业务逻辑
+- 处理器处理完业务后，会返回一个 `ModelAndView` 对象，`Model` 是返回的数据对象，View 是个逻辑上的 View。
+- `ViewResolver` 会根据逻辑 View 查找实际的 View。
+- `DispaterServlet` 把返回的 `Model` 传给 `View`（视图渲染）。
+- 把 View 返回给请求者（浏览器）
+
 
 ### MyBatis
+
+#### #{}和${}的区别是什么？
+
+- ${}是变量占位符，属于静态文本替换，在 `mybatis` 拼接sql时就会将占位符替换成相应的属性值，比如${driver}会被静态替换为com.mysql.jdbc.Driver
+
+- #{}是 `sql` 的参数占位符，`MyBatis` 会将 sql 中的#{}替换为? 号，在 sql 执行前会使用 `PreparedStatement` 的参数设置方法，按序给 sql 的? 号占位符设置参数值，比如 ps.setInt(0, parameterValue)，#{item.name} 的取值方式为使用反射从参数对象中获取 item 对象的 name 属性值，相当于 param.getItem().getName()。
+
+
+
+#### mapper接口的工作原理是什么？
+
+
+
+
+
 
 ### SpringCloud
 

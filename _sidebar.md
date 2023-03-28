@@ -1,4 +1,4 @@
-- Java基础
+- [Java基础](/docs/java/basic/README.md)
   - [String类和常量池](?id=String类和常量池)
     - [String对象的两种创建方式](?id=String对象的两种创建方式)
     - [newString这句话创建了几个对象？](?id=newString这句话创建了几个对象？)
@@ -8,20 +8,20 @@
     - [hashCode()与equals()的相关规定](?id=hashCode与equals的相关规定)
   - [反射](?id=反射)
     - [为什么说反射速度慢？为什么慢？](?id=为什么说反射速度慢？为什么慢？)
-  - [注解](?id=注解)
+  - 注解
 
-- [设计模式](/docs/design-patterns)
-  - [说说设计模式6大原则](?id=说说设计模式6大原则)
-  - [代理模式和桥接模式的异同点？](?id=代理模式和桥接模式的异同点？)
-  - [有几种单例的实现方式？以及它们的优缺点？](?id=有几种单例的实现方式？以及它们的优缺点？)
-  - [有几种动态代理的方式及它们实现的原理](?id=有几种动态代理的方式及它们实现的原理)
+  - [设计模式](/docs/java/design-patterns/README.md)
+    - [说说设计模式6大原则](?id=说说设计模式6大原则)
+    - [代理模式和桥接模式的异同点？](?id=代理模式和桥接模式的异同点？)
+    - [有几种单例的实现方式？以及它们的优缺点？](?id=有几种单例的实现方式？以及它们的优缺点？)
+    - [有几种动态代理的方式及它们实现的原理](?id=有几种动态代理的方式及它们实现的原理)
 
-- 集合容器
+- [集合容器](/docs/java/collection/README.md)
   - [集合框架底层数据结构总结](?id=集合框架底层数据结构总结)
   - [使用什么集合你是怎么选择的？](?id=使用什么集合你是怎么选择的？)
   - [为什么要使用集合？而不是数组](?id=为什么要使用集合？而不是数组)
   
-  - List
+  - [List](/docs/java/collection/list/README.md)
     - [ArrayList和Vector的区别](?id=ArrayList和Vector的区别)
     - [ArrayList与LinkedList区别](?id=ArrayList与LinkedList区别)
     - [RandomAccess接口的作用是什么？](?id=RandomAccess接口的作用是什么？)
@@ -29,20 +29,19 @@
     - [说说ensureCapacity方法的作用](?id=说说ensureCapacity方法的作用)
     - [System.arraycopy()和Arrays.copyOf()方法](?id=arraycopy和copyof方法)
 
-  - Set
+  - [Set](/docs/java/collection/set/README.md)
     - [比较HashSet、LinkedHashSet和TreeSet三者的异同](?id=比较HashSet、LinkedHashSet和TreeSet三者的异同)
     - [HashSet是怎么去重的？](?id=HashSet是怎么去重的？)
 
-  - Map
+  - [Map](/docs/java/collection/map/README.md)
     - [HashMap和Hashtable的区别](?id=HashMap和Hashtable的区别)
     - [HashMap底层数据结构](?id=HashMap底层数据结构)
     - [HashMap的长度为什么是2的幂次方？](?id=HashMap的长度为什么是2的幂次方？)
     - [ConcurrentHashMap底层具体实现](?id=ConcurrentHashMap底层具体实现)
     - [ConcurrentHashMap和Hashtable的区别](?id=ConcurrentHashMap和Hashtable的区别)
 
-- JVM
-
-  - 类加载
+- [JVM](/docs/jvm)
+  - [类加载](/docs/jvm/class-loading/README.md)
     - [类的生命周期](?id=类的生命周期)
     - [类加载过程](?id=类加载过程)
     - [双亲委派加载机制](?id=双亲委派加载机制)
@@ -50,7 +49,7 @@
     - [如果不想用双亲委派模型怎么办？](?id=如果不想用双亲委派模型怎么办？)
     - [双亲委派模型的好处？](?id=双亲委派模型的好处？)
     
-  - JVM内存区域
+  - [JVM内存区域](/docs/jvm/jvm-memory-area/README.md)
     - [运行时数据区](?id=运行时数据区)
     - [程序计数器为什么是私有的？](?id=程序计数器为什么是私有的？)
     - [虚拟机栈和本地方法栈为什么是私有的？](?id=虚拟机栈和本地方法栈为什么是私有的？)
@@ -60,7 +59,7 @@
     - [方法区和永久代的关系](?id=方法区和永久代的关系)
     - [为什么要将永久代替换为元空间呢？](?id=为什么要将永久代替换为元空间呢？)
     
-  - 内存分配与垃圾回收
+  - [内存分配与垃圾回收](/docs/jvm/memory-allocation-and-garbage-collection/README.md)
     - [对象内存分配机制](?id=对象内存分配机制)
     - [动态计算晋升年龄阈值](?id=动态计算晋升年龄阈值)
     - [为什么设置新生代的年龄不能超过15？](?id=为什么设置新生代的年龄不能超过15？)
@@ -72,20 +71,19 @@
     - [MinorGc和FullGC 有什么不同呢？](?id=MinorGc和FullGC有什么不同呢？)
     - [什么是空间分配担保机制？](?id=什么是空间分配担保机制？)
     
-  - Java对象
+  - [Java对象](/docs/jvm/java-object/README.md)
     - [对象的创建过程](?id=对象的创建过程)
     - [对象内存的分配方式？](?id=对象内存的分配方式？)
     - [对象的内存布局](?id=对象的内存布局)
     - [对象的访问定位](?id=对象的访问定位)
     - [Java中有哪些引用类型？](?id=Java中有哪些引用类型？)
     
-  - [垃圾回收器](?id=垃圾回收器)
+  - [垃圾回收器](/docs/jvm/garbage-collector/README.md)
   
 - IO
   
-- 网络
-  - [网络协议](?id=网络协议)
-  
+- [网络](/docs/network/README.md)
+  - [网络协议](/docs/network/protocol/README.md)
       - [TCP](?id=TCP)
         - [TCP是什么？](?id=TCP是什么？)
         - [TCP三次握手协议](?id=TCP三次握手协议)
@@ -93,18 +91,16 @@
         - [第2次握手传回了ACK，为什么还要传回SYN？](?id=第2次握手传回了ACK，为什么还要传回SYN？)
         - [四次挥手协议](?id=四次挥手协议)
         - [为什么要四次挥手？](?id=为什么要四次挥手？)
-        
-      - [HTTP长连接，短连接](?id=HTTP长连接，短连接)
-      - [HTTP1.0和HTTP1.1的主要区别是什么?](?id=HTTP1.0和HTTP1.1的主要区别是什么?)
-      - [HTTP和HTTPS的区别？](?id=HTTP和HTTPS的区别？)
+        - [HTTP长连接，短连接](?id=HTTP长连接，短连接)
+        - [HTTP1.0和HTTP1.1的主要区别是什么?](?id=HTTP1.0和HTTP1.1的主要区别是什么?)
+        - [HTTP和HTTPS的区别？](?id=HTTP和HTTPS的区别？)
       
-  - [浏览器](?id=浏览器)
+  - [浏览器](/docs/network/browser/README.md)
       - [Cookie和Session的区别](?id=Cookie和Session的区别)
       - [在浏览器中输入url地址->>显示主页的过程](?id=在浏览器中输入url地址->>显示主页的过程)
       - [Http无状态链接，如何实现session跟踪？](?id=Http无状态链接，如何实现session跟踪？)
 
-- 并发编程
-
+- [并发编程](/docs/concurrent/README.md)
   - [什么是线程和进程？](?id=什么是线程和进程？)
   - [线程有几种创建方式](?id=线程有几种创建方式)
   - [说说线程的生命周期和状态？](?id=说说线程的生命周期和状态？)
@@ -117,7 +113,7 @@
   - [什么是上下文切换？](?id=什么是上下文切换？)
   - [并发编程三大特性](?id=并发编程三大特性)
 
-  - 线程池
+  - [线程池](/docs/concurrent/thread-pool/README.md)
       - [为什么要用线程池？](?id=为什么要用线程池？)
       - [线程池ThreadPoolExecutor重要参数](?id=线程池ThreadPoolExecutor重要参数)
       - [线程池threadFactory用来做什么？](?id=线程池threadFactory用来做什么？)
@@ -127,52 +123,51 @@
       - [线程池被创建后里面有线程吗？](?id=线程池被创建后里面有线程吗？)
       - [核心线程数会被回收吗？需要什么设置？](?id=核心线程数会被回收吗？需要什么设置？)
 
-  - AQS
+  - [AQS](/docs/concurrent/AQS/README.md)
       - [请你说一下自己对于AQS原理的理解？](?id=请你说一下自己对于AQS原理的理解？)
       - [AQS对资源的共享方式](?id=AQS对资源的共享方式)
       - [AQS相关组件介绍](?id=AQS相关组件介绍)
 
-  - CAS和Atomic原子类
+  - [CAS和Atomic原子类](/docs/concurrent/cas-and-atomic/README.md)
       - [了解CAS吗？](?id=了解CAS吗)
       - [Atomic原子类有什么用？](?id=Atomic原子类有什么用？)
       - [能不能简单介绍一下AtomicInteger类的原理](?id=能不能简单介绍一下AtomicInteger类的原理)
       - [CAS会带来哪些问题？能不能讲讲](?id=CAS会带来哪些问题？能不能讲讲)
   
-  - ReentrantLock类
+  - [ReentrantLock类](/docs/concurrent/reentrant-lock/README.md)
       - [介绍一下ReentrantLock](?id=介绍一下ReentrantLock)
       - [ReentrantLock是怎么实现可重入的？](?id=ReentrantLock是怎么实现可重入的？)
       - [说说公平锁与非公平锁](?id=说说公平锁与非公平锁)
 
-  - synchronized关键字
+  - [synchronized关键字](/docs/concurrent/synchronized/README.md)
       - [讲一下synchronized关键字的底层原理](?id=讲一下synchronized关键字的底层原理)
       - [谈谈synchronized和ReentrantLock的区别](?id=谈谈synchronized和ReentrantLock的区别)
       - [synchronized锁升级过程](?id=synchronized锁升级过程)
 
-  - volatile关键字
+  - [volatile关键字](/docs/concurrent/volatile/README.md)
     - [讲一下JMM](?id=讲一下JMM)
     - [happens-before是什么？](?id=happens-before是什么？)
     - [volatile关键字的作用？](?id=volatile关键字的作用？)
     - [说说synchronized关键字和volatile关键字的区别？](?id=说说synchronized关键字和volatile关键字的区别？)
 
-  - ThreadLocal类
+  - [ThreadLocal类](/docs/concurrent/thread-local/README.md)
       - [说说ThreadLocal类？作用？数据结构？](?id=说说ThreadLocal类？作用？数据结构？)
       - [ThreadLocalMap哈希算法？怎么解决hash冲突？](?id=ThreadLocalMap哈希算法？怎么解决hash冲突？)
       - [ThreadLocalMap扩容机制？](?id=ThreadLocalMap扩容机制？)
       - [ThreadLocal内存泄露问题？源码是怎么解决的？为什么要用弱引用？](?id=ThreadLocal内存泄露问题？源码是怎么解决的？为什么要用弱引用？)
       - [ThreadLocal使用场景？](?id=ThreadLocal使用场景？)
       
-  - 并发容器
+  - [并发容器](/docs/concurrent/concurrent-collection/README.md)
       - [ConcurrentHashMap](?id=ConcurrentHashMap)
       - [CopyOnWriteArrayList](?id=CopyOnWriteArrayList)
       - [ConcurrentLinkedQueue](?id=ConcurrentLinkedQueue)
 
-- 框架
-
-  - SpringBoot
+- [框架](/docs/framework/README.md)
+  - [SpringBoot](/docs/framework/spring-boot/README.md)
     - [什么是SpringBoot自动装配？](?id=什么是SpringBoot自动装配？)
     - [SpringBoot的是如何实现自动装配的？如何按需加载？](?id=SpringBoot的是如何实现自动装配的？如何按需加载？)
     
-  - Spring
+  - [Spring](/docs/framework/spring/README.md)
     - [说一下bean的生命周期？](?id=说一下bean的生命周期？)
     - [bean的作用域有哪些?](?id=bean的作用域有哪些?)
     - [单例bean的线程安全问题了解吗？](?id=单例bean的线程安全问题了解吗？)
@@ -182,10 +177,10 @@
     - [@Resource和@Autowired注解有什么区别](?id=@Resource和@Autowired注解有什么区别)
     - [Spring框架中用到了哪些设计模式？](?id=Spring框架中用到了哪些设计模式？) 
 
-  - SpringMVC
+  - [SpringMVC](/docs/framework/spring-mvc/README.md)
     - [SpringMVC工作原理了解吗?](?id=SpringMVC工作原理了解吗?)
 
-  - Mybatis
+  - [Mybatis](/docs/framework/mybatis/README.md)
     - [#{}和${}的区别是什么？](?id=#{}和${}的区别是什么？)
     - [mapper接口的工作原理是什么？](?id=mapper接口的工作原理是什么？)
     - [mapper接口可以重载吗？](?id=mapper接口可以重载吗？)
@@ -194,9 +189,9 @@
     - [能简述一下动态sql的执行原理不？](?id=能简述一下动态sql的执行原理不？)
     - [MyBatis是否可以映射Enum枚举类？](?id=MyBatis是否可以映射Enum枚举类？)
 
-  - SpringCloud
+  - [SpringCloud](/docs/framework/spring-cloud/README.md)
 
-- 数据库
+- [数据库](/docs/database/README.md)
   - [InnoDB存储引擎各组件介绍](?id=innoDB存储引擎各组件介绍)
   - [一条sql语句是如何执行的？](?id=一条sql语句是如何执行的？)
   - [MyISAM和InnoDB的区别](?id=MyISAM和InnoDB的区别)
@@ -207,7 +202,7 @@
   - [什么是不可重复读？RR级别下是如何避免的？](?id=什么是不可重复读？RR级别下是如何避免的？)
   - [你是怎么优化数据库的？](?id=你是怎么优化数据库的？)
 
-  - 索引
+  - [索引](/docs/database/index/README.md)
       - [索引有什么用？有什么缺点？](?id=索引有什么用？有什么缺点？)
       - [介绍一下覆盖索引？什么是回表？](?id=介绍一下覆盖索引？什么是回表？)
       - [索引的底层数据结构](?id=索引的底层数据结构)
@@ -220,22 +215,20 @@
       - [建立索引的一些原则](?id=建立索引的一些原则)
       - [使用索引的注意事项](?id=使用索引的注意事项)
       
-  - 锁
+  - [锁](/docs/database/lock/README.md)
       - [InnoDB引擎的行锁是怎么实现的？](?id=MySQL中InnoDB引擎的行锁是怎么实现的？)
       - [InnoDB存储引擎的锁的算法](?id=InnoDB存储引擎的锁的算法)
       - [数据库的乐观锁和悲观锁是什么？怎么实现的？](?id=数据库的乐观锁和悲观锁是什么？怎么实现的？)
-    
       - [什么是死锁？怎么解决？](?id=什么是死锁？怎么解决？)
       
-      
-  - 事务与MVCC
+  - [事务与MVCC](/docs/database/transaction-and-mvcc/README.md)
       - [事务的四种隔离级别](?id=事务的四种隔离级别)
       - [InnoDB如何实现事务的ACID的？](?id=InnoDB如何实现事务的ACID的？)
       - [MVCC在InnoDB中的实现](?id=MVCC在InnoDB中的实现)
       - [在RC和RR隔离级别下MVCC的差异？](?id=在RC和RR隔离级别下MVCC的差异？)
       - [RR级别下会发生幻读吗？为什么？](?id=RR级别下会发生幻读吗？为什么？)
   
-- redis
+- [redis](/docs/database/redis/README.md)
   - [Redis常见数据结构](?id=Redis常见数据结构)
   - [Redis单线程模型](?id=Redis单线程模型)
   - [Redis没有使用多线程？为什么不使用多线程？](?id=Redis没有使用多线程？为什么不使用多线程？)
@@ -254,7 +247,6 @@
 - 分布式
 
 
-- Docker
-
+- [Docker](/docs/docker/README.md)
   - [docker常见命令](?id=docker常见命令)
   - [docker-compose怎么挂载磁盘](?id=docker-compose怎么挂载磁盘)

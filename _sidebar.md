@@ -123,6 +123,9 @@
       - [线程池被创建后里面有线程吗？](/docs/concurrent/thread-pool/README.md?id=线程池被创建后里面有线程吗？)
       - [核心线程数会被回收吗？需要什么设置？](/docs/concurrent/thread-pool/README.md?id=核心线程数会被回收吗？需要什么设置？)
       - [如何合理设置核心线程数的大小？](/docs/concurrent/thread-pool/README.md?id=如何合理设置核心线程数的大小？)
+      - [说说submit和execute两个方法有什么区别？](/docs/concurrent/thread-pool/README.md?id=说说submit和execute两个方法有什么区别？)
+      - [为什么线程池要使用阻塞队列？](/docs/concurrent/thread-pool/README.md?id=为什么线程池要使用阻塞队列？)
+      - [调用了shutdownNow或者shutdown，线程一定会退出么？](/docs/concurrent/thread-pool/README.md?id=调用了shutdownNow或者shutdown，线程一定会退出么？)
 
   - [AQS](/docs/concurrent/AQS/README.md)
       - [请你说一下自己对于AQS原理的理解？](/docs/concurrent/AQS/README.md?id=请你说一下自己对于AQS原理的理解？)

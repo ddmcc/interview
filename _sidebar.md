@@ -122,6 +122,7 @@
       - [说说线程池拒绝策略，怎么自定义拒绝策略？](/docs/concurrent/thread-pool/README.md?id=说说线程池拒绝策略，怎么自定义拒绝策略？)
       - [线程池被创建后里面有线程吗？](/docs/concurrent/thread-pool/README.md?id=线程池被创建后里面有线程吗？)
       - [核心线程数会被回收吗？需要什么设置？](/docs/concurrent/thread-pool/README.md?id=核心线程数会被回收吗？需要什么设置？)
+      - [如何合理设置核心线程数的大小？](/docs/concurrent/thread-pool/README.md?id=如何合理设置核心线程数的大小？)
 
   - [AQS](/docs/concurrent/AQS/README.md)
       - [请你说一下自己对于AQS原理的理解？](/docs/concurrent/AQS/README.md?id=请你说一下自己对于AQS原理的理解？)

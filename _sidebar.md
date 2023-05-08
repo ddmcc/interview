@@ -249,6 +249,12 @@
   - [什么是缓存穿透？](/docs/database/redis/README.md?id=什么是缓存穿透？)
   - [什么是缓存雪崩？](/docs/database/redis/README.md?id=什么是缓存雪崩？)
   - [缓存一致性](/docs/database/redis/README.md?id=缓存一致性)
+  - [redis有哪些集群模式？](/docs/database/redis/README.md?id=redis有哪些集群模式？)
+
+- [中间件](/docs/middleware/README.md)
+  - [RabbitMQ](/docs/middleware/rabbitMQ/README.md)
+    - [rabbitMQ如何实现消息幂等？](/docs/middleware/rabbitMQ/README.md?id=rabbitMQ如何实现消息幂等？)
+    - [rabbitMQ出现消息堆积的情况怎么处理？](/docs/middleware/rabbitMQ/README.md?id=rabbitMQ出现消息堆积的情况怎么处理？)
   
 - RPC
 

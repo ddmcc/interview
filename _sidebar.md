@@ -244,6 +244,7 @@
   - [为什么要用Redis/为什么要用缓存？](/docs/database/redis/README.md?id=为什么要用Redis、为什么要用缓存？)
   - [Redis是如何判断数据是否过期的呢？](/docs/database/redis/README.md?id=Redis是如何判断数据是否过期的呢？)
   - [过期的数据的删除策略了解么？](/docs/database/redis/README.md?id=过期的数据的删除策略了解么？)
+  - [Redis的内存淘汰机制?](/docs/database/redis/README.md?id=Redis的内存淘汰机制?)
   - [Redis持久化机制](/docs/database/redis/README.md?id=Redis持久化机制)
   - [Redis事务](/docs/database/redis/README.md?id=Redis事务)
   - [什么是缓存穿透？](/docs/database/redis/README.md?id=什么是缓存穿透？)
@@ -255,7 +256,9 @@
   - [RabbitMQ](/docs/middleware/rabbitMQ/README.md)
     - [rabbitMQ如何实现消息幂等？](/docs/middleware/rabbitMQ/README.md?id=rabbitMQ如何实现消息幂等？)
     - [rabbitMQ出现消息堆积的情况怎么处理？](/docs/middleware/rabbitMQ/README.md?id=rabbitMQ出现消息堆积的情况怎么处理？)
-  
+    - [RabbitMQ怎么保证消息不丢失？](/docs/middleware/rabbitMQ/README.md?id=RabbitMQ怎么保证消息不丢失？)
+    - [RabbitMQ消息是推的还是拉的？](/docs/middleware/rabbitMQ/README.md?id=RabbitMQ消息是推的还是拉的？)
+    - [RabbitMQ如何集群部署？](/docs/middleware/rabbitMQ/README.md?id=RabbitMQ如何集群部署？)
 - RPC
 
 - 分布式

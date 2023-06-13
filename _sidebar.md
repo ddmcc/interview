@@ -79,6 +79,11 @@
     - [Java中有哪些引用类型？](/docs/jvm/java-object/README.md?id=Java中有哪些引用类型？)
     
   - [垃圾回收器](/docs/jvm/garbage-collector/README.md)
+    - [Java8默认使用的垃圾收集器是什么?](/docs/jvm/garbage-collector/README.md?id=Java8默认使用的垃圾收集器是什么?)
+    - [Java11的默认垃圾收集器是什么?](/docs/jvm/garbage-collector/README.md?id=Java11的默认垃圾收集器是什么?)
+    - [什么是并行垃圾收集?](/docs/jvm/garbage-collector/README.md?id=什么是并行垃圾收集?)
+    - [什么是并发垃圾收集器?](/docs/jvm/garbage-collector/README.md?id=什么是并发垃圾收集器?)
+    - [什么是G1增量式垃圾收集?](/docs/jvm/garbage-collector/README.md?id=什么是G1增量式垃圾收集?)
   
 - IO
   

@@ -1,4 +1,7 @@
 - [Java基础](/docs/java/basic/README.md)
+  - [异常]
+    - [try-catch-finally如何使用？](/docs/java/basic/README.md?id=try-catch-finally如何使用？)
+    - [受检异常和非受检异常有什么区别？](/docs/java/basic/README.md?id=受检异常和非受检异常有什么区别？)
   - [String类和常量池](/docs/java/basic/README.md?id=String类和常量池)
     - [String对象的两种创建方式](/docs/java/basic/README.md?id=String对象的两种创建方式)
     - [newString这句话创建了几个对象？](/docs/java/basic/README.md?id=newString这句话创建了几个对象？)
@@ -9,6 +12,11 @@
   - [反射](/docs/java/basic/README.md?id=反射)
     - [为什么说反射速度慢？为什么慢？](/docs/java/basic/README.md?id=为什么说反射速度慢？为什么慢？)
   - 注解
+  - [数据类型](/docs/java/data-type/README.md)
+    - [8大基本类型](/docs/java/data-type/README.md?id=8大基本类型)
+    - [基本类型和包装类型的区别？](/docs/java/data-type/README.md?id=基本类型和包装类型的区别？)
+    - [包装类型的缓存机制了解么？](/docs/java/data-type/README.md?id=包装类型的缓存机制了解么？)
+    - [自动装箱与拆箱了解吗？原理是什么？](/docs/java/data-type/README.md?id=自动装箱与拆箱了解吗？原理是什么？)
 
   - [设计模式](/docs/java/design-patterns/README.md)
     - [说说设计模式6大原则](/docs/java/design-patterns/README.md?id=说说设计模式6大原则)
@@ -85,8 +93,9 @@
     - [什么是并发垃圾收集器?](/docs/jvm/garbage-collector/README.md?id=什么是并发垃圾收集器?)
     - [什么是G1增量式垃圾收集?](/docs/jvm/garbage-collector/README.md?id=什么是G1增量式垃圾收集?)
   
-- IO
-  
+- [IO](/docs/io/README.md)
+  - [BIO、NIO、AIO有什么区别？](/docs/io/README.md?id=BIO、NIO、AIO有什么区别？)
+
 - [网络](/docs/network/README.md)
   - [网络协议](/docs/network/protocol/README.md)
       - [TCP](/docs/network/protocol/README.md?id=TCP)

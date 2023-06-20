@@ -1,5 +1,34 @@
 ## Java基础
 
+### 异常
+
+#### try-catch-finally如何使用？
+
+- **try块：** 用于捕获异常。其后可接零个或多个 `catch` 块，如果没有 `catch` 块，则必须跟一个 `finally` 块
+- **catch块：** 用于处理 `try` 捕获到的异常。
+- **finally块：** 无论是否捕获或处理异常，`finally` 块里的语句都会被执行。当在 `try` 块或 `catch` 块中遇到 `return` 语句时，`finally` 语句块将在方法返回之前被执行
+
+注意: **不要在 `finally` 语句块中使用 `return` !** 当 `try` 语句和 `finally` 语句中都有 `return` 语句时，`try` 语句块中的 `return` 语句会被忽略。这是因为 `try` 语句中的 `return` 返回值会先被暂存在一个本地变量中，当执行到 `finally` 语句中的 `return` 之后，这个本地变量的值就变为了 `finally` 语句中的 `return` 返回值
+
+#### 受检异常和非受检异常有什么区别？
+
+- **受检查异常：** `Java`代码在编译过程中，如果受检查异常没有被 `catch` 或者 `throws` 关键字处理的话，就没办法通过编译，除了RuntimeException及其子类以外，其他的Exception类及其子类都属于受检查异常 。常见的受检查异常有：IO相关的异常、`ClassNotFoundException`、`SQLException`
+- **不受检查异常:** `Java` 代码在编译过程中 ，我们即使不处理不受检查异常也可以正常通过编译。
+
+**RuntimeException及其子类都统称为非受检查异常，常见的有：**
+
+>NullPointerException(空指针错误)
+>IllegalArgumentException(参数错误比如方法入参类型错误)
+>NumberFormatException（字符串转换为数字格式错误）
+>IllegalArgumentException的子类）
+>ArrayIndexOutOfBoundsException（数组越界错误）
+>ClassCastException（类型转换错误）
+>ArithmeticException（算术错误）
+>SecurityException （安全错误比如权限不够）
+>UnsupportedOperationException(不支持的操作错误比如重复创建同一用户)
+
+
+
 ### String类和常量池
 
 [String不可变性](http://ddmcc.cn/2021/02/14/string/)
@@ -129,8 +158,6 @@ true
 
 4. 反射在达到一定次数时（15），会动态编写字节码并加载到内存中，这个字节码没有经过编译器优化，也不能享受JIT优化。
 
-
-
 ### 注解
 
 #### 说说你对 Java 注解的理解
@@ -168,17 +195,13 @@ public @interface TestAnnotation {
 某个注解，再通过 **getAnnotation()** 方法获取 `Annotation` 对象
 
 
-### 反射
+#### 缓存和内存的区别？
 
-#### 为什么说反射速度慢？为什么慢？
+缓存是 `CPU` 内部的，而内存是位于 `CPU` 外的。
 
-1. 反射会进行一系列的安全性校验，并且一些方法需要通过调用 native 方法来实现
+`CPU` 存取数据的速度非常的快，一秒能够存取十亿条指令和数据（术语：CPU 主频1G），而相对于这个来说，内存就显得很慢了。
 
-2. 如果类没被加载，还得先加载类，并经过连接等阶段，而 new 则无需查找，因为在 Linking 阶段已经将符号引用转为直接引用
-
-3. 反射调用方法时会从方法数组中遍历查找，并且会检查可见性等操作会耗时。
-
-4. 反射在达到一定次数时（15），会动态编写字节码并加载到内存中，这个字节码没有经过编译器优化，也不能享受JIT优化。
+缓存的存在是为了解决 `CPU` 和内存之间存取速度的差异的。内存中被 `CPU` 访问最频繁的数据和指令会被复制到 `CPU` 的缓存中（这其中的“频繁”是由专门的算法来定义的），这样 `CPU` 就不用去很慢的内存中读取需要的数据和指令了
 
 
-### 注解
+

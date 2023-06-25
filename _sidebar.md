@@ -273,6 +273,7 @@
     - [RabbitMQ怎么保证消息不丢失？](/docs/middleware/rabbitMQ/README.md?id=RabbitMQ怎么保证消息不丢失？)
     - [RabbitMQ消息是推的还是拉的？](/docs/middleware/rabbitMQ/README.md?id=RabbitMQ消息是推的还是拉的？)
     - [RabbitMQ如何集群部署？](/docs/middleware/rabbitMQ/README.md?id=RabbitMQ如何集群部署？)
+    - [RabbitMQ如何实现延迟队列](/docs/middleware/rabbitMQ/README.md?id=RabbitMQ如何实现延迟队列？)
   - [RocketMQ](/docs/middleware/rocketMQ/README.md)
     - [rocketMQ怎么保证消息不丢失？](/docs/middleware/rocketMQ/README.md?id=rocketMQ怎么保证消息不丢失？)
     - [RocketMQ如何集群部署？](/docs/middleware/rocketMQ/README.md?id=RocketMQ如何集群部署？)

@@ -11,18 +11,20 @@
     - [hashCode()与equals()的相关规定](/docs/java/basic/README.md?id=hashCode与equals的相关规定)
   - [反射](/docs/java/basic/README.md?id=反射)
     - [为什么说反射速度慢？为什么慢？](/docs/java/basic/README.md?id=为什么说反射速度慢？为什么慢？)
-  - 注解
+  - [注解]
   - [数据类型](/docs/java/data-type/README.md)
     - [8大基本类型](/docs/java/data-type/README.md?id=8大基本类型)
     - [基本类型和包装类型的区别？](/docs/java/data-type/README.md?id=基本类型和包装类型的区别？)
     - [包装类型的缓存机制了解么？](/docs/java/data-type/README.md?id=包装类型的缓存机制了解么？)
     - [自动装箱与拆箱了解吗？原理是什么？](/docs/java/data-type/README.md?id=自动装箱与拆箱了解吗？原理是什么？)
-
   - [设计模式](/docs/java/design-patterns/README.md)
     - [说说设计模式6大原则](/docs/java/design-patterns/README.md?id=说说设计模式6大原则)
     - [代理模式和桥接模式的异同点？](/docs/java/design-patterns/README.md?id=代理模式和桥接模式的异同点？)
     - [有几种单例的实现方式？以及它们的优缺点？](/docs/java/design-patterns/README.md?id=有几种单例的实现方式？以及它们的优缺点？)
     - [有几种动态代理的方式及它们实现的原理](/docs/java/design-patterns/README.md?id=有几种动态代理的方式及它们实现的原理)
+
+- [数据结构](/docs/data-structure/README.md)
+  - [红黑树了解吗？](/docs/data-structure/README.md?id=红黑树了解吗？)
 
 - [集合容器](/docs/java/collection/README.md)
   - [集合框架底层数据结构总结](/docs/java/collection/README.md?id=集合框架底层数据结构总结)

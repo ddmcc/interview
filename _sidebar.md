@@ -280,6 +280,7 @@
     - [rocketMQ怎么保证消息不丢失？](/docs/middleware/rocketMQ/README.md?id=rocketMQ怎么保证消息不丢失？)
     - [RocketMQ如何集群部署？](/docs/middleware/rocketMQ/README.md?id=RocketMQ如何集群部署？)
     - [RocketMQ消息是推的还是拉的？](/docs/middleware/rocketMQ/README.md?id=RocketMQ消息是推的还是拉的？)
+    - [RocketMQ的重试机制？](/docs/middleware/rocketMQ/README.md?id=RocketMQ的重试机制？)
 - RPC
 
 - 分布式

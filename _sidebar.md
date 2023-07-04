@@ -263,6 +263,7 @@
   - [Redis的内存淘汰机制?](/docs/database/redis/README.md?id=Redis的内存淘汰机制?)
   - [Redis持久化机制](/docs/database/redis/README.md?id=Redis持久化机制)
   - [Redis事务](/docs/database/redis/README.md?id=Redis事务)
+  - [什么是缓存击穿？](/docs/database/redis/README.md?id=什么是缓存击穿？)
   - [什么是缓存穿透？](/docs/database/redis/README.md?id=什么是缓存穿透？)
   - [什么是缓存雪崩？](/docs/database/redis/README.md?id=什么是缓存雪崩？)
   - [缓存一致性](/docs/database/redis/README.md?id=缓存一致性)
